@@ -1,0 +1,7 @@
+{
+    "nav" : [["About Me", "關於我", "关于我"], ["Focus", "重點", "重点"],["Community Work", "社區工作", "社区工作"]],
+    "intro": {
+        "text": [["Vote For", "投票給", "投票给"], ["YAN WANG", "王豔", "王艳"], ["Markham City Councillor Ward 2", "萬錦市議員2區", "万锦市议员2区"]],
+        "buttons": [["How to Vote", "如何投票", "如何投票"], ["Contact", "聯繫", "联系"]]
+    }
+}
