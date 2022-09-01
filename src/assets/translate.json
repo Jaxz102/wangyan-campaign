@@ -1,7 +1,230 @@
 {
-    "nav" : [["About Me", "關於我", "关于我"], ["Focus", "重點", "重点"],["Community Work", "社區工作", "社区工作"]],
+    "nav" : [["Meet Yan", "關於王艷", "我是王艳"], ["Platform", "重點", "工作重点"],["Community", "社區", "服务社区"],["Endorsement", "大家的评价", "大家的评价"]],
+    "functions" : [["How to Vote", "如何投票", "如何投票"], ["Support", "支持王艷", "支持王艳"], ["Get Involved", "加入團隊", "加入团队"],["Contact", "聯繫我們", "联系我们"]],
     "intro": {
         "text": [["Vote For", "投票給", "投票给"], ["YAN WANG", "王豔", "王艳"], ["Markham City Councillor Ward 2", "萬錦市議員2區", "万锦市议员2区"]],
-        "buttons": [["How to Vote", "如何投票", "如何投票"], ["Contact", "聯繫", "联系"]]
-    }
+        "buttons": [["How to Vote", "如何投票", "如何投票"], ["Support", "支持王艷", "支持王艳"], ["Get Involved", "加入我們", "加入团队"], ["Contact", "聯繫我們", "联系我们"]]
+    },
+    "volunteer":{
+        "title": ["Volunteer Sign Up", "加入我們", "义工报名"],
+        "msg": ["Participate in our Volunteer Program!", "參加我們的義工活動！", "参加我们的义工活动！"],
+        "data": [["First Name", "名", "名"],["Last Name", "姓", "姓"],["Email Address", "郵箱", "邮箱"], ["Phone Number","電話","电话"]],
+        "submit": ["Submit", "提交", "提交"],
+        "loading": ["...Loading", "...加载中", "...加載中"],
+        "selectAge": ["Select your age group:", "選擇您的年齡組:", "选择您的年龄组:"]
+    },
+    "contact": {
+        "title": ["Contact", "聯繫我門", "联系我们"],
+        "inTouch": ["Get In Touch", "保持聯繫", "保持联系"],
+        "email": ["Email", "郵箱", "邮箱"],
+        "enterMsg": ["Message", "留言", "留言"],
+        "msgPlace": ["Enter your message", "輸入留言", "输入留言"],
+        "thanks": ["Thanks for your message!", "感谢您的留言!", "感谢您的留言!"],
+        "sending": ["...Sending", "...发送中", "...發送中"],
+        "send": ["Send", "發送", "发送"]
+
+    },
+    "focus":{
+        "msg": [["Yan First sentence", "Yan second sentence"], ["Yan 聚焦三個方面的改善，為創造更加健康和可持續發展的美好未來不懈努力。在2區居民區建立鄰里守望計劃是Yan Wang現正努力推動的社區事務之一。", "Yan 承諾，當選後將全力調動政府和社會資源提高便民服務。"], ["Yan 聚焦三个方面的改善，并承诺，当选后将努力调动整合政府和社会资源，提高便民服务，为创造更加健康和可持续发展的美好未来不懈努力。", "并承诺，当选后将努力调动政府和社会资源提高便民服务。"]],
+        "first": {
+            "header": ["Improving community safety", "加強社區安全", "加强社区安全"],
+            "desc0": ["Facilitating cooperation between the governments, the police, and the community", 
+            "Establishing police-community interaction and feedback channel", 
+            "Improving the overall safety prevention capacity of the community", 
+            "Effectively ensuring the safety of residents and businesses owners"],
+            "desc1": ["促進政府、警方和民眾的合作，建立警民互動機制，提高社區整體安全防範能力，切實保障居民和商戶的安全；", 
+            "促进政府、警方和居民的合作，建立警民互动机制，提高社区整体安全防范能力，切实保障居民和商户的安全；"],
+            "desc2": ["促进政府、警方和民众的合作，建立警民互动机制，提高社区整体安全防范能力，切实保障居民和商户的安全；",
+            "促进政府、警方和居民的合作，建立警民互动机制，提高社区整体安全防范能力，切实保障居民和商户的安全；"]
+        
+        },
+        "second": {
+            "header": ["Enhance community mental health support", "關注居民心理和精神健康", "关注居民心理和精神健康"],
+            "desc0": ["Raise awareness and provide more services for the psychological and mental health of residents", "Advocate the implementation of corresponding resources in the city council", "Increase cultural resources and facilities, and ensure improvement of the resident's physical and mental health respectively"],
+            "desc1": ["在市議會推動落實相應的預算和法案，促進市政府提供更多心理和精神健康服務，增加文化資源和設施，保障居民身心健康同步發展；", 
+            "在市议会推动落实相应的预算和法案，促进市政府提供更多心理和精神健康服务，增加相应资源和设施，保障居民身心健康同步发展；"],
+            "desc2": ["在市议会推动落实相应的预算和法案，促进市政府提供更多心理和精神健康服务，增加文化资源和设施，保障居民身心健康同步发展；", 
+            "在市议会推动落实相应的预算和法案，促进市政府提供更多心理和精神健康服务，增加相应资源和设施，保障居民身心健康同步发展；"]
+        },
+        "third": {
+            "header": ["Make municipal services more accessible", "讓市政服務觸手可及", "让市政服务触手可及"],
+            "desc0": ["Protect green space", "Increase outdoor exercise facilities", "Ensure economic prosperity and employment while controlling property taxes and rationally allocating financial resources", "Provide more and better municipal services."],
+            "desc1": ["保護綠地，增加戶外活動設施，保證經濟發展創造就業的同時，控制地稅的增長，合理分配財政資源，增加便民服務。", 
+            "保护绿地，增加户外活动设施，保证经济发展创造就业的同时，控制地税的增长，合理分配财政资源，增加便民服务。"],
+            "desc2": ["保护绿地，增加户外活动设施，保证经济发展创造就业的同时，控制地税的增长，合理分配财政资源，增加便民服务。", 
+            "保护绿地，增加户外活动设施，保证经济发展创造就业的同时，控制地税的增长，合理分配财政资源，增加便民服务。"]
+        }
+    },
+    "howtovote":{
+        "header": [["Ways to Vote", "投票信息", "投票信息"], ["Choose the voting option that works best for you", "2022年10月14日至10月24日，Markham 萬錦市線上和線下的投票渠道同時對選民開放。", "2022年10月14日至10月24日，Markham 万锦市线上和线下的投票渠道同时对选民开放。"]],
+        "option1": {
+            "title": ["Option 1: Online during Voting Days", "方式一：線上投票", "方式一：线上投票"],
+            "bullet": [["October 14 from 10 AM to October 24 at 8 PM", "10月14日至24日早10點至晚8點", "10月14日至24日早10点至晚8点"],
+                       ["Vote anywhere, anytime from a computer, tablet or mobile phone", "使用個人電子設備(手機、電腦、平板電腦等)", "使用个人电子设备(手机、电脑、平板电脑等)"],
+                       ["Vote on a secure computer at any Markham Public Library branch during", "或萬錦市圖書館提供的電腦進行投票", "或万锦市图书馆提供的电脑进行投票"]]
+        },
+        "option2": {
+            "title": ["Option 2: By paper ballot during Early Voting Days", "方式二：最後投票日之前（線下投票）", "方式二：最后投票日之前（线下投票）"],
+            "bullet": [["Thursday, October 20 to Saturday, October 22 from 10 AM to 8 PM", "10月20日（星期四）至10月22日(星期六）早10點至晚8點", "10月20日（星期四）至10月22日(星期六）早10点至晚8点"],
+                       ["Vote in person at any Voting Place across Markham", "在萬錦市指定的投票處做紙質選票投票", "在万锦市指定的投票处做纸质选票投票"]]
+        },
+        "option3": {
+            "title": ["Option 3: On Final Voting Day (Voting Online)", "方式三：最後投票日當天 （線上投票）", "方式三：最后投票日当天 （线上投票）"],
+            "bullet": [["Monday, October 24 is the last day to vote", "10月24日(星期一)爲最後投票日", "10月24日(星期一)为最后投票日"],
+                       ["Vote on a personal device, a secure computer at any Markham Public Library branch, or a touchscreen at any Voting Place across Markham from 10:00 AM to 8:00 PM", "可以在早10點至晚8點期間，使用個人電子設備、萬錦市圖書館提供的電腦、或者在指定的投票處使用投票專用觸屏設備進行線上投票。", "可以在早10点至晚8点期间，使用个人电子设备、万锦市图书馆提供的电脑、或者在指定的投票处使用投票专用触屏设备进行线上投票。"],
+                       ["Vote on a secure computer at any Markham Public Library branch during", "或萬錦市圖書館提供的電腦進行投票", "或万锦市图书馆提供的电脑进行投票"]]
+        },
+        "option4": {
+            "title": ["Option 4: At the Elections Markham Returning Office", "方式四：在Markham市選舉辦公室（線下投票）", "方式四：在Markham市选举办公室（线下投票）"],
+            "bullet": [["October 14 to 22 from 10:00 AM to 8:00 PM", "10月14日至10月22日期間", "10月14日至10月22日期间"],
+                       ["Vote in person by paper ballot at the", "通過預約在早10點至晚8點期間，在", "通过预约在早10点至晚8点期间，在"],
+                        ["by appointment", "進行線下投票", "进行线下投票"]]
+        },
+        "tele": ["Telephone","電話","电话"]
+    },
+    "support":{
+        "title": ["Support Me", "支持王艷", "支持王艳"]
+    },
+    "frequentQA": {
+        "inquiry": [["We love to hear from you!", "Community Questionnaire"], ["诚邀您与我们一起讨论社区话题", "社区问卷调查表"], ["诚邀您与我们一起讨论社区话题", "社区问卷调查表"]],
+        "intro1": ["Municipal service is about the people around us, the little things in life that affect us all. The city services are here to serve all residents of Ward 2.", "在敲门走访的过程中，我们跟大家的交谈总是很愉快！同时也遇到一些知识性和服务性的问题。对于一些共性的内容，我会整理在这里，便于大家查阅了解，并保持更新。", "在敲门走访的过程中，我们跟大家的交谈总是很愉快！同时也遇到一些知识性和服务性的问题。对于一些共性的内容，我会整理在这里，便于大家查阅了解。"],
+        "intro2": ["Chatting with residents of Ward 2 during our canvassing sessions is always an enriching experience! The neighbours and friends we encounter often bring up important questions and potential improvements regarding government service-related issues, so I decided to organize and update the common concerns of residents here for everyone’s convenience. I hope you find this information helpful.", "市政服务，就是我们身边的事，看似琐碎，却又与我们的生活息息相关。每一位社区居民都是市政服务的对象。在日常走访的过程中，我们遇到邻居、朋友，提到的一些市政服务问题，在此整理了一些有代表性的，看看您是否也有类似的困扰。", "市政服务就是我们身边的事，看似琐碎，却又与我们的生活息息相关。每一位社区居民都是市政服务的对象。我们将在走访过程中遇到的一些市政服务相关问题，整理在此，看看您是否也有类似的困扰。"],
+        "q1": {
+            "title": ["Resident Concern 1: The tree in front of my house was damaged by a windstorm. Will the city replace a new tree?", "问题一：家门口市政的树被风暴损坏，政府是否会来换新树？", "问题一：家门口市政的树被风暴损坏，政府是否会来换新树？"],
+            "explanation": ["Many residents were left with broken trees after the storm on May 21. Since most of the broken trees were city-managed trees, residents sought effective solutions.", "很多居民家门口的树被5月21日的一场风暴损毁折断。因为很多树木属于政府管理树，很多居民都需要树木清理流程的相关信息。", "很多居民家门口的树被5月21日的一场风暴损毁折断。因为很多树木属于政府管理树，很多居民都需要树木清理流程的相关信息。"],
+            "answer": ["Yan contacted the city on behalf of the resident and filed a new case. The city is now taking subsequent actions of structural pruning, tree removal, stump grinding, and tree replacement. The city also provided detailed tree disposal instructions for the resident: to place properly prepared tree debris at the curb for collection on your regular leaf and yard material collection day. ", "答：YAN 代表居民联系了市政服务部门，并对此事备案。经查询，市政服务人员在持续检视整个区域的受损情况，以确定需要修缮的事项，补种树木的数量，包括修剪断枝，移除损毁的树木和树根并补种新树。大家在清理自家物业内的树枝时，请按照日常清理花园垃圾的日期放在Curb等市政统一处理。关于如何处理散落的树枝，市政网站提供了详细指引。", "答：YAN 代表居民联系了市政服务部门，并对此事备案。经查询，市政服务人员在持续检视整个区域的受损情况，以确定需要修缮的事项，补种树木的数量，包括修剪断枝，移除损毁的树木和树根并补种新树。大家在清理自家物业内的树枝时，请按照日常清理花园垃圾的日期放在Curb等市政统一处理。关于如何处理散落的树枝，市政网站提供了详细指引。"],
+            "note": ["Yan also filed applications for tree removal and replacement on behalf of residents and effectively resolved resident concerns.", "YAN 已帮助了一些市民向市政部门申请对断树和损毁树的移除，并得到了处理。", "YAN 已帮助了一些市民向市政部门申请对断树和损毁树的移除，并得到了处理。"]
+        },
+        "q2":{
+            "title": ["Resident Concern 2: For city-managed trees, what are the relevant municipal regulations for the height, condition, styling, safety standards, etc.?", "问题二：对市政府拥有的树的修剪和维护责任是如何规定的？", "问题二：对市政府拥有的树的修剪和维护责任是如何规定的？"],
+            "answer": ["Answer: For government-managed trees:The government will be responsible for cutting and styling the trees. In case of any safety concerns, please contact the city to request a cutting session.", "答：如果是政府管理的树，政府会负责修剪。如果政府管理树存在危险或安全隐患，居民可以致电政府，申请评估和修剪请求。", "答：如果是政府管理的树，政府会负责修剪。如果政府管理树存在危险或安全隐患，居民可以致电政府，申请评估和修剪请求。"],
+            "contact": ["Contact: (905)-477-5530", "联系电话：9054775530", "联系电话：9054775530"]
+        },
+        "q3": {
+            "title": ["Resident Concern 3: For privately-owned trees, what are the relevant municipal regulations for the height, condition, styling, safety standards, etc.?", "问题三：对于私人拥有的树，市政有什么相关规定？是否对树的高度，健康状况，修剪，安全隐患控制等等有要求？", "问题三：对于私人拥有的树，市政有什么相关规定？是否对树的高度，健康状况，修剪，安全隐患控制等等有要求？"],
+            "points": [
+                ["Concerns regarding privately owned trees need to be negotiated with your neighbour.", "私人物业的树需要跟邻居商量解决", "私人物业的树需要跟邻居商量解决"],
+                ["If the owner agrees to cut the tree, cuts resulting in a 30% or more reduction in volume need to be reported to the city; otherwise, there is no need.", "如果私人业主同意剪树，且修剪幅度超过30%，居民需要向政府申请许可。30%以内的修剪则不需要获得政府许可。", "如果私人业主同意剪树，且修剪幅度超过30%，居民需要向政府申请许可。30%以内的修剪则不需要获得政府许可。"],
+                ["There are no government regulations on a tree’s height.", "关于树的高度，政府没有规定限制。", "关于树的高度，政府没有规定限制。"],
+                [""]
+            ]
+        },
+        "q4": {
+            "title": ["Resident Concern 4: What are residential area construction and fence height regulations?", "问题四：居民区修建围栏，高度有什么限制？", "问题四：居民区修建围栏，高度有什么限制？"],
+            "answer": ["The maximum height of fences placed in internal areas is 1.2 meters (4 inches), and the max fence height for the side yard and backyard is 1.8 meters (6 inches).", "答：围栏位置不同，高度限制也不一样。通常内部地段围栏的最高高度应为1.20米以下(4英尺)，但位于侧院或后院的围栏的最高高度应为1.80米以下(6英尺)。", "答：围栏位置不同，高度限制也不一样。通常内部地段围栏的最高高度应为1.20米以下(4英尺)，但位于侧院或后院的围栏的最高高度应为1.80米以下(6英尺)。"]
+        },
+        "q5": {
+            "title": ["Resident Concern 5: Are there municipal regulations regarding driveway construction?", "问题五：如果要把自家前院部分草皮改铺车道，市政有什么规定吗？", "问题五：如果要把自家前院部分草皮改铺车道，市政有什么规定吗？"],
+            "answer": ["Answer: If your house is on a minor division of land with a width narrower than 10.1 meters (33 to 34 inches). In that case, driveway construction must maintain 25% of the original scenery (for example, lawn, garden, sidewalk, and bushes). If your house is on a more extensive land division, with a width wider than 10.1 meters (33 to 34 inches), driveway construction projects must maintain 40% of the original scenery.", "答：关于除草修路，如果你的房子在一个较小的地块上，宽度小于10.1米(33英尺- 4英寸)，车道扩建必须保留25%的原始景观 (如草地、花园、人行道和灌木丛)。如果你的家在一个较大的土地上，超过10.1米(33英尺- 4英寸)宽，车道扩建必须保留40%的景观；", "答：关于除草修路，如果你的房子在一个较小的地块上，宽度小于10.1米(33英尺- 4英寸)，车道扩建必须保留25%的原始景观 (如草地、花园、人行道和灌木丛)。如果你的家在一个较大的土地上，超过10.1米(33英尺- 4英寸)宽，车道扩建必须保留40%的景观；"],
+            "note": ["Please note that if you want to construct a driveway, the constructor must be licensed by Markham City.", "特别需要注意：如果要修建driveway，承包商必须是在万锦市的持牌公司。", "特别需要注意：如果要修建driveway，承包商必须是在万锦市的持牌公司。"]
+        }
+        
+    },
+    "quotes":[
+        {
+            "img": "annieblyles.jpg",
+            "quotes0": [["Diversity is one of the most important core values in the City Of Markham.  Diversity is more than ethnicity but also gender.  We always encourage adding more women to leadership positions regardless of the public or private sector.  We need a more diverse council than ever, with only three females in a 13-person council currently.  In 2014 we witnessed the first Chinese female elected to the MARKHAM council. 2018, we added one more.  In 2022, Markham Ward 2 voters can add another Chinese female to the council.  Yan Wang has over 30+ years of work experience in media, business, and special education and raised her family in Ward 2 for over 13 years.   This is an important election, with your help, we can make history together by adding another highly qualified and capable Chinese female to the MARKHAM council.  On October 14-24, elect Yan Wang as our Ward 2 Councillor!", "Annie Byles, Resident of Ward 2 for 19 years & Senior Realtor with 37 years of experience"]],
+            "quotes2": [["多元化是万锦市最重要的核心价值观之一。不仅在种族方面需要多元化，性别上也需要体现这个价值观。我们始终鼓励在公营和私营部门增加更多女性担任领导职务。我们比以往任何时候都更需要一个更加多元化的市议会。目前万锦市议会13 名议员中只有三名女性成员。2014年，我们见证了第一位华裔女性入选市议会。 2018年，我们又增加了一位。 2022 年，万锦市Ward 2 的选民可以驱动又一名华人女性进入市议会。YAN WANG （王艳）在媒体、商业和特殊教育方面拥有超过 30 年的工作经验，并在 Award 2 生活和养育家庭超过13年。这是一次重要的选举，在您的帮助下我们可以共同创造历史，将高素质、有能力的华人女性送进万锦市议会。 10月14-24日，选举Yan Wang成为我们第2区的市议员！", "Annie Byles, 19年Ward 2 居民& 37年资深地产专家"]]
+        },
+        {
+            "img": "sharon.jpg",
+            "quotes0": [["As the essential core value in the City Of Markham, diversity cannot be just slogans.  There should be real actions which lead to real results. Voters in Ward 2 can make this happen together by casting their votes for Yan Wang, it is not only because Yan will be a great addition to the council but also a Chinese woman.   It’s very difficult to break that glass ceiling, and I am calling and asking all of you to vote for Yan Wang on October 14-24 to make this happens. ", "Sharon Wang, Associate librarian & Adjunct Professor Osgoode Hall Law School-York University"]],
+            "quotes2": [["作为万锦市的核心价值，多元化不应只是口号。必须有真正的行动去达成真正的结果。Ward 2 的选民可以通过投票给 Yan Wang 来共同实现这一目标，这不仅是因为 Yan 将成为万锦市议会的宝贵财富，而且她是一名中国女性。打破这个玻璃天花板是非常困难的，所以我呼吁大家在 10 月 14 日至 24 日投票给 Yan Wang，共同努力去实现这一目标。", "王晓榕，约克大学奥斯古得法学院图书馆法学职业研究员&法学教授"]]
+        },
+        {
+            "img": "catherine.jpg",
+            "quotes0": [["I am thrilled to support Yan Wang and we have been close colleagues for over 10 years. At that time, she volunteered in my classroom supporting students with autism while also engaging in a variety of school events and activities. She demonstrated professionalism and a positive manner at all times. Yan is an effective team member and possesses a high degree of social intelligence. Her proactive nature in initiating dialogue and checking in with co-workers does much to support our students and reinforce a collaborative work environment. I still remember how my colleagues and students enjoyed being around her. She is a positive role model and inspired students with her caring, supportive and inclusive attitude to allow students to feel comfortable and important.  She ensured that every student’s needs and concerns were addressed and followed up. She was not afraid to take initiative in critical situations and was always readily available to help. Yan is a caring individual who has demonstrated a love and passion for working with children. I believe that she would be a great asset in public service as a city councillor, and I am sure that the community will be fortunate to have her as the representative on the city council.", "Catherine Karellas, Teacher of Nokiidaa Public School"]],
+            "quotes2": [["我强烈支持YAN的参选。YAN 是我认识了10多年的学校同事，那时她在我的班上义务服务有自闭症的学生，同时她参与学校的各项活动。她永远都是既专业又积极，会关注每一个学生的需求，并总能找到办法去解决各种问题，老师和学生们都喜欢跟她在一起。正是她发自内心的爱和关怀，让她广受师生们的爱戴。她勇于面对各种危急情况，并时刻准备出手相助。我相信她是公共服务系统的宝贵财富，有她做市议会的代表是万锦市居民们的福祉。", "Catherine Karellas, Teacher of Nokiidaa Public School"]]
+        },
+        {
+            "img": "satya.png",
+            "quotes0": [["Yan Wang, a community leader who has been working on behalf of the community for years. A special educator who loves and cares about people. I witness Yan Wang’s community service long before she put her name in the running as Ward 2 Councillor. As a resident who has lived in Ward 2 for a long time. We should be voting for a person who has very intimate knowledge of the Ward, who has raised her family in Ward 2 and has grown with the community in the last 13 years. A person who is truest passionate about community services such as school work, community safety and advocating for the community in the past many years. Yan Wang’s love for our Ward 2 community is evident and proven in her decade of work. Yan Wang will be voted in this October election, and I would urge all of you to vote for her as well. On October 14-24, me and my family will be voting for Yan Wang as Ward 2 Councilor.", "Satya Aurora, Resident of Ward 2"]],
+            "quotes2": [["我认识YAN很久，见证了她在2区生活的10多年中热心为社区服务，为教育、社区安全和社会事务呼吁奔走，和作为社区领袖所做出的贡献。作为万锦市的长期居民，我投票给熟悉我们的社区、对社区服务有真知灼见的人。最重要的是，通过她多年来对社区的奉献，我体会到她对我们2区深深的爱！我支持YAN，我和我的家人会在10月14日-24日为YAN投票，也请您投YAN一票！", "Satya Aurora, Resident of Ward 2"]]
+        },
+        {
+            "img": "leahtaylor.jpeg",
+            "quotes2": [["很荣幸向您介绍YAN！我与YAN初识，是在我的一个与华裔媒体的见面活动上，YAN是主持人。我们一见如故，成为了好友。在我的竞选团队中，她热情和专注的做事风格获得了广泛好评。我相信她会将这些优点带进市议员这个角色中去。她愿意为弱者挺身而出，勇于表达观点，并总能积极主动的把事情做好。相信YAN的这些品质会让她成为合格的市议员！", "Leah Taylor, Member of the House of Commons of Canada"]]
+        },
+        {
+            "img": "emptyportrait.jpeg",
+            "quotes0": [["As a Markham resident and a mother of a child with special needs I trust Yan, an experienced special needs educator who is passionate in community services has the best understanding of the importance of allocating the resources to support mental health. Whit all her personal and professional experience, I cannot think of a better candidate for the Markham Councillor position to represent special needs children from all over Markham. I support Yan to run for the 2022 Markham Councillor Office!", "Polly Zhang"], ["Yan is a supportive person that cares about the Markham community. Yan and her team are helpful and I do enjoy working with them.", "Ryan (Son of Polly)"]],
+            "quotes2": [["我是万锦市居民，我有一个有特殊需要的孩子。我特别信任YAN。她是一个充满热情经验丰富的教育专家。最重要的是，她深刻认识到心理健康、支持心理健康建设对每个人和整个社区的重要性。我真的想不出比YAN更好的市议员人选，请大家支持她！", "Polly Zhang"], ["YAN是一个关心社区的人。她和她的团队对我帮助很大，我很享受跟她和她的竞选团队一起工作。", "Ryan (Son of Polly)"]]
+        },
+        
+        {
+            "img": "itwang.jpeg",
+            "quotes0": [["As a daughter, wife, mother, and long term resident of Markham Ward 2, Yan has a deep understanding of the challenges and problems that Markham residents are facing in their daily lives. She strongly feels the call of duty to stand out and to speak for Markham people. She will be a perfect and outstanding city councillor for Markham because of her passion, leadership, and hands-on experience from her long-term career as a successful business lady and as a seasoned media professional. Let’s vote for her. ", "Ti Wang, President of Chinese Professionals Association of Canada,"]],
+            "quotes2": [["作为女儿、妻子、母亲，和多年的万锦市民，王艳对市民们每天面临的挑战和问题都有深刻的理解。作为成功的商业女性和经验丰富的专业媒体人，她对生活和工作充满热情。她具备领导能力和实践经验，有强烈的责任感。将会是万锦市第二区居民最合格的市议员代表，让我们为她投票。", "王体，中国专业人士协会主席"]]
+        },
+        {
+            "img": "salma.jpg",
+            "quote0": ["Yan Wang is an amazing and dedicated worker in all different areas I have seen her as a special needs educator, and I know from working with her how dedicated and hard-working she is to all projects she takes on, she believes in helping everyone and she will do whatever is needed to achieve it. MARKHAM Council will be lucky to have someone with such passion and drive. Please vote for Yan Wang on October 14-24! ", "Salma AhmedFormer Special Needs EA of Toronto District School Board"],
+            "quotes2": [["Yan Wang 作为一名特殊教育工作者，她在各个不同的领域都很优秀和勤奋敬业。在与她一起工作的过程中，我见证了她对所有从事的工作和项目的敬业、勤奋和认真负责。她认为应当帮助每个需要帮助的人，而且她尽一切努力去这样做。 万锦市议会将很幸运有这样有热情和动力的人加入。请在10月14-24 日为Yan Wang 投票！", "Salma Ahmed, Retired Special Needs EA of Toronto District School Board"]]
+        },
+        {
+            "img": "peterkhang.jpg",
+            "quotes0": [["It is with great pleasure and excitement to provide this letter of endorsement for Ms. Yan Wang, candidate for Councillor at the City of Markham. As the Founder and President of the Wildcats Volleyball Club, I have witnessed many parents and players at our volleyball club. Yan is one of those rare individuals that truly stands above the crowd. Yan volunteered passionately and tirelessly to ensure a wonderful, fulfilling season for all the players and their families on the team. Her effective communication and leadership skills help to build bridges and consensus within our team. Her inclusive, caring touch also made everyone feel welcomed and part of the group. Yan has those attributes and qualities when I think of a great public servant. This is an honest, understanding individual who is unafraid to take a powerful stand on tough concerns for her community. I am very proud to be her friend and believe she would make an impactful great Markham Councillor for Ward 2.", "Peter Khang, President & Founder of Markham Wildcats Volleyball Club"]],
+            "quotes2": [["我非常高兴和激动地为万锦市议员候选人王艳女士提供支持。作为Markham Wildcats Volleyball Club 排球俱乐部的创始人和总裁，我在我的排球俱乐部亲身见证过许多家长和球员的情况。YAN是有独特人格的少数人之一。她热情而不知疲倦地提供志愿服务，确保球队所有球员和他们的家人都能度过一个美好而充实的赛季。她有效的沟通和领导能力有助于在我们的团队中建立桥梁和共识。她用包容和关怀令到团队中每个人都感受到归属感和团队的温暖。当我想到一个伟大和合格的的公务员应有的品性时，YAN具备所有这些特点。她诚实、善于理解和倾听，不惧怕对社区的棘手问题采取强有力的立场。我很自豪能成为她的朋友，并相信她会成为第 2 区具有影响力的伟大的市议员。", "Peter Khang, President & Founder of Markham Wildcats Volleyball Club"]]
+        },
+        {
+            "img": "richardyoon.jpeg",
+            "quotes0": [["I’ve had the pleasure of knowing Yan Wang for many years.   I have always found Yan to be very accountable and responsible with any activities and work that she has participated in. Yan’s passion for leading and adapting to any situation is quite admirable.  Yan leads by example and her leadership to work through any challenge is quite remarkable as I have witnessed people and organizations accept and acknowledge her leadership on many occasions. I’ve had the opportunity to lead private and public companies, and finding the right leaders is quite challenging.  With someone like Yan,  she would be an ideal candidate to have and lead in any organization with her passion for getting things done and her abundance of energy to persevere through any challenges and exceed expectations. This has been my experience with Yan, personally and professionally. I am a true fan of Yan Wang, and any organization would be lucky to have her on their team.", "Richard Yoon, CEO of Redline Communications"]],
+            "quotes2": [["我有幸认识Yan多年。Yan對她參與的任何工作和活動都非常的认真負責和可以信赖。YAN对于承担领导责任和调整适应不同局面的热情令人欽佩。YAN 总是以身作則，她在應對任何挑戰方面都表现出出色的領導能力。我亲眼目睹了不同的組織和个人在很多場合認可和赞赏她的領導能力。我有機會領導私營和上市公司，我体会到找到合適的領導者极具挑战性。有了 Yan 這樣的人，她將是領導任何組織的理想人選。因為她對完成工作和解决问题充滿熱情，並且总是有足夠的精力堅持不懈地應對任何挑戰並能超越期望完成任务。這是我在個人和專業方面對 Yan 的體驗。我是 Yan Wang 的忠實粉絲，有她的加入，将是任何團隊的幸運。", "Richard Yoon, Redline Communication 總裁兼首席執行官"]]
+        },
+        {
+            "img": "yuxuan.jpg",
+            "quotes0": [["As an experienced special needs educator, Yan Wang demonstrates her ability as a great listener and navigate through difficult situations to help those in needs.  This is very unique skill sets we need on MARKHAM Council.  Yan Wang would make a great Ward 2 Councillor!", "Yuxuan Yang, YRCC922 Board Member & Business Franchisee"]],
+            "quotes2": [["作为一位经验丰富的特殊教育工作者，YAN WANG 展示了她作为一个伟大的倾听者，和在困难的境况下帮助有需要的人的能力。 这是 MARKHAM 市议会非常需要的独特的技能。 YAN WANG 会是一位伟大的第二区市议员！", "Yuxuan Yang, First Markham Place 公寓业主委员会委员 & 连锁经营企业主"]]
+        },
+        {
+            "img": "hanjialiang.jpg",
+          
+            "quotes2": [["我与YAN WANG 是多年的朋友。我们在社区活动的义工团队中相识，后来发展成互相支持的好友。我有机会作为YAN WANG 主持的电台节目的嘉宾参与她的媒体工作。YAN作为媒体人的严谨、认真、专业、敬业和实干的工作态度令我非常钦佩和赞赏。在社区，YAN 经常领导组织大型体育文化活动，我亲身见证了YAN 的组织能力、领导能力、沟通协调能力、对于团队的管理能力和对社会资源合理调配的综合能力。她丰富的专业经验和独特的个人能力对于万锦市议会是难得的财富。她热心奉新、服务他人的热情是公共服务人士不可或缺的品质。我相信YAN 是2 区居民的最佳选择，她会代表居民和商户的利益，在市议会做大家可以信赖的代表！请在10月14-24日为YAN 投票！", "韩加良, 加拿大华人同乡会联合总会主席"]]
+        },
+        {
+            "img": "xiyingzhang.jpg",
+            "quotes0": [["As Yan Wang’s neighbour for over 10 years, I’m excited to endorse her for our Markham Councillor. As a dedicated mother of two successful daughters and a daughter of a senior parent, Yan plays an active role not only in teaching special needs students at TDSB but also in volunteering in different campaigns and social events and advocating on behalf of our community as a host of the local radio station. In the summer, neighbours of diverse backgrounds enjoy stopping by her breathtaking front yard and talking to this easy-going lady while she is busy with gardening. She is always patient when listening to them, keen on their interest, and acts as an integral part of a friendly community. I was impressed by her courage to run in the election campaign as an immigrant woman who dares to chase her dream at her mid-age. Yan’s journey would definitely inspire more people, especially those who just need a little encouragement to walk out of their comfort zone and push the boundary of what can be achieved. Yan Wang’s admirable passion and energy in serving the community and unique experience and knowledge in working with various audiences would make her a remarkable asset to the City of Markham Council.", "XiYing Zhang，Resident of Ward 2"]],
+            "quotes2": [["我和Yan Wang 作邻居已經 10 多年了，我很高兴能支持她成为我們萬錦市的市議員。Yan不僅在多伦多教育局服务有特殊需要的學生，从事廣播電台的主持人工作，而且在不同的组织和社會活動中擔任志願者，是社区事务的积极倡导者。令我印象深刻的是，在夏天，来自不同背景的鄰居们都喜歡在她令人驚嘆的花园前停留，並在她忙於園藝時與這位隨和的女士交談。Yan在傾聽时總是很耐心，热衷于邻居们的兴趣，是友好社區中不可或缺的一份子。作為一名中年移民女性积极參選市议员，她勇于追求梦想的勇气令我折服。Yan 的旅程将會激勵更多的人，尤其是那些需要一些鼓勵走出舒適區去做出突破和實現的人。我相信, Yan在服務社區方面令人欽佩的熱情和精力，服务不同群体的獨特經驗和知識，將使她成為萬錦市的非凡财富。", "XiYing Zhang，Resident of Ward 2"]]
+        },
+        {
+            "img": "zhaoyuanpeng.jpg",
+            
+            "quotes2": [["我和Yan Wang王艳相识多年，她是一位好母亲、好太太和好女儿，是活跃于社区热心奉献的好义工。她是我们中的一员，她深深扎根于万锦社区，切身体会你我的感受。所以，她最能够代表你我的利益。在过去的社区建设中， Yan从未缺席，我相信，在今后的市政管理和建设中，她也不会缺席。我呼吁，对市议员投票大家都不要缺席，每一张选票都会决定我们未来的生活质量，让我们一起努力，在10月14-24日为王艳投票，选出真正有能力有服务意愿会坚定的为我们发声的市议会的好代表！", "赵远鹏, Rogers 项目管理师"]]
+        },
+        {
+            "img": "liuqiang.jpg",
+            
+            "quotes2": [["我是万锦市第二区 Cachet Woods小区邻里守望计划的创建者之一。我亲身经历和见证了王艳作为在第二区居住了13年的长期居民，她深入了解社区、服务社区的实干精神。她联合Carhet Woods 和第二区内的其他居民小区的邻里守望志愿者们，努力推动邻里守望联动工作，积极帮助社区协调政府和社会的各种资源，组织警民互动，为促进社区安全做出了刻苦的努力。王艳是被居民熟知的社区人士，她主持的访谈节目，和对社区各类活动的宣传报道，都是大家喜闻乐见的。她积极服务社区，组织大型体育和文化活动，充分展现了她的领导才能、全局观念、管理和沟通协调能力、危机处理能力。她为社区服务的热情和贡献值得尊敬和信赖。她从事特殊教育，服务有特殊需要的学生群体多年，她的爱心和敬业精神令人感动。她大力提倡的面向未来的理念深入民心。她是万锦市第二区市议员的最佳人选。", "刘强, Cathet Woods 社区邻里守望计划创建者之一 & 金威汽车维修中心业主"]]
+        },
+        {
+            "img": "kaylie.jpg",
+            "quotes0": [["I met Yan Wang's family about eight years ago while playing volleyball with her daughters, Queenie and Jodie. Since then, our families have become very close. Even though I am not a blood relative, Yan has taken me into her family and treated me like a daughter of her own. She has invited me on many family trips, ensured I was fed whenever I came to visit, and always made sure I was making safe decisions. Having spent so much time with her, I can tell you that she has always been a strong-willed, ambitious, sincere, hard-working, social, and genuinely kind woman. And she has demonstrated these abilities through her countless contributions to her community. These include taking on the position of team manager for our volleyball team, immersing herself in multiple recreational sports such as volleyball and soccer, being a talk show host for a local radio station, and taking the initiative to host large social events, all while holding the responsibility of being a full-time working mother. Because Yan embodies all of these characteristics, I know that she would be the most outstanding city councillor for the people of Markham. Coming from someone who knows directly how much Yan can care and love for people who aren't even her blood, I can tell you with certainty that she will fight to represent you all as if you were a part of her own family. ", "Kaylie Chan, Student of University of Waterloo & Former Player of Markham Wildcats Volleyball Club"]],
+            "quotes2": [["八年前，我在与YAN 的女儿Queenie 和Jodie 一起打排球时认识了她。从那时起，我们两家人变得非常亲密。虽然我不是血统亲属，但YAN 却把我当成了家人，对待我像对待她自己的女儿一样。她邀请我参加许多她们的家庭旅行，不论什么时候我到访她都给我准备好多好吃的，并确保我在任何情况下都做出安全的决定。和她相处了这么久，我可以告诉你，她是一个意志坚强、积极向上、真诚、勤奋、善于沟通、心地善良的女性。她通过对社区的无数贡献展示了这些优良品质。其中包括担任我们排球队的领队，投身于排球、足球等多项运动，担任电台的节目主持人，主持大型社交活动。与此同时，她是一位有全职专业工作的母亲！因为YAN 的所有这些特点，我知道她将成为万锦市人民最杰出的市议员。作为亲身体会到YAN 的爱和关心的并非血统亲属的一个人，我可以肯定地告诉你，她会为代表你们的利益而战，就好像你是她自己家庭的一员一样。", "Kaylie Chan, Student of University of Waterloo & Former Player of Markham Wildcats Volleyball Club"]]
+        },
+        {
+            "img": "jodie.jpg",
+            "quotes0": [["I support my mom in every aspect of running for the office of Markham Council.  She has always offered her full support for my sister and I in academics and athletics. I was a competitive volleyball player for over six years, and my mom would always be the first one to jump at any volunteer opportunity. Not only that, she has offered endless emotional support and guidance for my academics which has paved my path to completing my IB diploma and going into my second year of Computer Science at the University of Waterloo. As most of you could understand the insane stress level during these years, my mom would never miss FaceTime while I was at school, and my parents would drive two and a half hours every weekend to visit me at Waterloo. The dedication and hard work that my mom demonstrates not only as a mother, but as a leader. I would love for all of you, the residents of Markham in Ward 2, to witness and be a part of her tremendous impact. I will vote for her on October 14, and I urge you to do so.", "Jodie Zhu, Student at University of Waterloo"]],
+            "quotes2": [["我是Yan 的女儿，我全力支持我妈妈竞选万锦市议员。在学术和体育方面，她总是尽全力支持我和我的姐姐。在我作为竞技排球运动员的 6 年多的时间力，我妈妈总是第一个和会去任何场合任何活动做志愿者的人。不仅如此，她还为我的学业提供了无尽的情感支持和指导，这为我完成高中IB学业铺平了道路。现在，我进入了滑铁卢大学计算机科学专业的第二年。也许你们中的大多数人都能理解这些年我所面对的压力，我在学校的时候，我妈妈永远不会错过每一个跟我 FaceTime交流的机会，我的父母每个周末都会开车两个半小时去滑铁卢大学看我，为我打气。这是我妈妈不仅作为母亲，而且作为领导者所表现出的奉献精神和刻苦努力！我希望你们所有人，万锦市第二区的居民们，也能见证和体会她为你带来的巨大影响。我会在10月14日为YAN WANG投票，我呼吁，你也像我一样为她投票！", "Jodie Zhu, Student at University of Waterloo"]]
+        },
+        {
+            "img": "queenie.jpg",
+            "quotes0": [["I am the oldest daughter of Yan Wang. I offer my utmost support for my mom in her campaign. Ever since I could remember, my mom has been my number one supporter in everything I want to pursue. She has been by my side since I was in Castlemore Public School,  Buttonville public school and Sir John A Macdonald public school, always volunteering for events and even coming on school field trips with me, up until now in University. Aside from school, she played a massive role as a supporter in my competitive volleyball club, coming to every single tournament and cheering her heart on. She was a fantastic team player, a role model and a leader to my teammates and me. In my adult life, I have gone on my endeavours, but my mom still sticks by my side to make me feel supported in everything. For instance, when facing struggles in the workplace, through thick and thin, my mom provided me with wisdom on how to handle these challenging situations. Her professionalism and practical communication skills helped me through these unprecedented situations that one may face in the workforce. With her advice, I learned a lot and am a more mature individual because of it. I firmly believe that my mom will be an asset to the residents of Markham Ward 2! Please vote for YAN WANG along with me on October 14!", "Queenie Zhu, Marketing and Finance student at Toronto Metropolitan University"]],
+            "quotes2": [["我是YAN WANG的大女儿。我为我妈妈竞选万锦市议员提供最大的支持。从我记事起，我妈妈就一直是我想要追求的一切目标的第一支持者。从我在Castlemore 小学、 Buttonville 小学和 Sir John A Macdonald 小学时起，她就一直在我身边，为我学校的各项活动做志愿者，甚至在学校和区域田径运动会时，除了做义工外，为我和老师同学们提供美味佳肴。直至我的大学时期都是如此。除了学校以外，她作为我的竞技排球俱乐部的支持者为我的球队发挥了巨大的作用，她参加我们的每一场比赛，从心底里为我们加油鼓气。她是一位了不起的团队成员，是我和我的队友的榜样和领导者。在我的成年生活中，我的妈妈仍然坚持在我身边，让我在任何事情上都感受到她的支持。我在职场上遇到困难时，她与我风雨同舟，给了我如何应对这些艰难处境的智慧。她的专业和有效的沟通技巧帮助我度过了职场中面临的难关。在她的建议和引导下，我学到了很多东西，也因此变得更加成熟。我坚信我妈妈会成为万锦市第二区居民的财富！请在10月14日和我一起，为YAN WANG 投票！", "Queenie Zhu, Marketing and Finance student at Toronto Metropolitan University"]]
+        },
+        {
+            "img": "dongshan.jpg",
+            "quotes0": [["I have known Yan for a few years, and she has various essential skills and experiences in serving the community. I am deeply impressed by her excellent leadership, motivation and passion for serving others, and  I support women in politics.", " DongShan Zhao, Co-Founder Of Zhao Law Professional Corporation & President of Canana-China Alumni Business Aliance"]],
+            "quotes2": [["我认识Yan多年，她具备多项为社区服务的能力。她的领导才能和服务他人的热情和动力为我留下深刻的印象。我支持她作为女性参政!", "赵东山，东山律师事务所创建人& 律师加中校友商盟主席"]]
+        },
+        {
+            "img": "billye.jpg",
+            "quotes0": [["I am thrilled to endorse Yan Wang, a strong and intelligent woman. Her volunteer services in the community over the past years have been incredible. She organized sports and cultural performances in society, serving community residents, enriching community culture and making significant contributions to the spread and integration of Canadian multiculturalism. The prosperity and development of the community are inseparable from Yan’s dedication. I believe Yan will make a fantastic Ward 2 Councillor! Her successful entrepreneurial background and problem-solving skills is what we need on Markham Council to deal with City Challenges we are facing after COVID pandemic.", "Bill Jun Ye, Chairman of Confederation of Chinese Alumni Association & Professional"]],
+            "quotes2": [["我强烈支持YAN WANG参选万锦市Ward 2 市议员。她是一位坚强和有智慧的女性。多年来她服务社区积极贡献的义工行为令人钦佩。她组织大型体育文化活动和服务社区居民，为促进加拿大多元文化的交流和融合做出了突出的贡献。社区的发展和繁荣离不开YAN的刻苦努力，我坚信YAN会是一位非凡的Ward 2市议员。她成功的商业背景和解决问题的能力，正是万锦市议会处理和面对疫情大流行造成的城市问题的宝贵财富。", "叶军，加拿大中国高校校友会联合会理事长"]]
+        },
+        {
+            "img": "gaotong.jpeg",
+            "quotes0": [["As a daughter, wife, mother, and resident of Markham for many years, Yan has a deep understanding of the challenges and problems that Markham citizens are facing everyday. She strongly feels the call of duty to stand out and to speak for Markham people. She will be a perfect and outstanding city councillor for Markham because of her passion, leadership, and hands-on experience from her long-term career as a successful business lady and as a seasoned media professional. Let’s vote for her. ", "Carmen Gao, Resident of Ward 2"]],
+            "quotes2": [["在过去的一段时间，我认真观察和比较了几位市议员候选人。YAN 认真关注公共问题和仔细聆听社区声音的服务态度打动了我。2022年市议员选举将直接影响我们未来4年的生活，如果你希望看到一位成熟、诚实、有经验、关爱社区和积极能干的市议会代表，请加入我，支持YAN成功获选。", "高彤，2区居民代表"]]
+        }
+    ]
 }

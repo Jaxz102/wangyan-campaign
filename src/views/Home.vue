@@ -1,253 +1,87 @@
 <template>
-    <Navbar />
-    <div class="home">
-        <div class="home__text">
-            <!-- <p class="home__text--first">New Possibilities</p> -->
-            <p class="home__text--second">{{translate.text[0][lang]}}</p>
-            <h1 class="home__title">{{translate.text[1][lang]}}</h1>
-            <h2 class="home__subtitle">{{translate.text[2][lang]}}</h2>
-
-            <section class="home__buttons">
-                <button class="home__buttons--vote">{{translate.buttons[0][lang]}}</button>
-                <button class="home__buttons--contact" @click="contactScroll()">{{translate.buttons[1][lang]}}</button>
-            </section>
-        </div>
-        
-        <img src="../assets/images/portrait.png" alt="">
+    <div class="bannermsg">
+        <h1>Vote on October 14th - 24th, 2022</h1>
+        <!-- <img @click="accessibility()" src="https://www.markham.ca/wps/wcm/connect/markham/cb8656ac-dabe-4c3c-a68a-053515f17b76/eA_Icon-gray.svg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_2QD4H901OGV160QC8BLCRJ1001-cb8656ac-dabe-4c3c-a68a-053515f17b76-m.O7ozf" alt="accessiblity" class="accessible"> -->
     </div>
-    
-    
-    <section class="intro">
-        <img src="../assets/images/banner1.jpeg" class="intro__img" alt="">
-        <div class="intro__bg"></div>
-        <div class="intro__story">
-            <h1 class="intro__story--title">Yan's Story</h1>
-            <p class="intro__story--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet purus gravida quis blandit turpis cursus. Nisl nisi scelerisque eu ultrices vitae auctor. Diam phasellus vestibulum lorem sed. Mauris nunc congue nisi vitae suscipit tellus mauris a. Fusce ut placerat orci nulla.</p>
-        </div>
-    </section>
-
-    <div class="message1">
-        <h1>VOTE FOR WANG YAN!</h1>
+    <Start :lang="lang" />
+    <Navbar :lang="lang" />
+    <Intro v-if="lang == 0" :lang="lang"/>
+    <IntroSimp v-else-if="lang == 2" />
+    <!-- <div class="volunteerLocator"></div>
+    <div class="contactLocator"></div>
+    <div class="votebanner">
+        <h1>{{joinmsg[lang]}}</h1>
     </div>
-    <section class="contact">
-        <h1>Contact Us</h1>
-        <input type="email" class="contact__email" placeholder="Your Email">
-        <textarea placeholder="Enter your Message"></textarea>
-        <button class="contact__submit">Submit</button>
-
-        <div class="contact__info">
-            <p class="contact__info--num">Phone: 555-555-555</p>
-            <p class="contact__info--email">Email: wangyan@gmail.com</p>
-        </div>
-        
-    </section>
+    <Volunteer :lang="lang" /> -->
+    
+    <!-- <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fyanwangmarkham%2Fposts%2Fpfbid02Mv7EtcYjwbsGAu7onwstkwJNwZxBZaS5AyKxyqvpZUYBuBZm5Ek8Lz6GrUfU17nql&show_text=true&width=500" width="500" height="731" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe> -->
+    <!-- <Contact :lang="lang"/> -->
+    <Footer :lang="lang" />
     
 </template>
 
 <script>
 // @ is an alias to /src
 import Navbar from '@/components/Navbar.vue'
+import Start from '@/components/home/Start2.vue'
+import Intro from '@/components/home/Intro.vue'
+import IntroSimp from '@/components/home/IntroSimp.vue'
+import Volunteer from '@/components/home/Volunteer.vue'
+import Contact from '@/components/home/Contact.vue'
+import Footer from '@/components/Footer.vue'
 import translate from "@/assets/translate.json"
+
 export default {
   name: 'HomeView',
   components: {
-    Navbar
+    Navbar,
+    Start,
+    Intro,
+    IntroSimp,
+    Volunteer,
+    Contact,
+    Footer
   },
   data(){
       return{
-          lang: 0,
           translate: translate.intro,
+          processing: false,
+          showMessage: false,
+          messageDuration: 0,
+          joinmsg: ["Join our Volunteer Program!", "加入我們的義工活動!", "加入我们的义工活动!"]
       }
-  },    
+  }, 
+  props:{
+    lang: 0,
+  },
   methods: {
-      navTo(link){
-          this.$router.push(link);
-      },
-      contactScroll(){
-          document.querySelector('.message1').scrollIntoView({
+
+    navTo(link){
+        this.$router.push(link);
+    },
+    joinScroll(){
+        document.querySelector('.volunteerLocator').scrollIntoView({
             behavior: 'smooth'
         });
-      }
+    },
+      contactScroll(){
+          document.querySelector('.contactLocator').scrollIntoView({
+            behavior: 'smooth'
+        });
+      },
+    accessibility(){
+         window.open("https://www.essentialaccessibility.com/cityofmarkham/?utm_source=cityofmarkhamhomepg&utm_medium=iconsmall&utm_term=eachannelpage&utm_content=footer&utm_campaign=cityofmarkham")
+    }
   },
-  mounted(){
-      this.lang = this.$store.state.lang;
-      console.log("HOME MOUNTED")
-      
-  }
+
 }
 </script>
 <style lang="scss" scoped>
-@import "../assets/styles.scss";
+@import "@/assets/styles.scss";
 
-@mixin button{
-    display: block;
-    width: 200px;
-    height: 50px;
-    font-size: 1.25em;
-    font-weight: 600;
-    outline: none;
-    
-}
-
-.home{
+.locator{
+    height: 0; 
     width: 100%;
-    height: 600px;
-    background: rgb(37, 37, 37);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-
-    & > img{
-        display: block;
-        width: 450px;
-        align-self: flex-end;
-
-    }
-
-    &__text{
-        // position: absolute;
-        // z-index: 4;
-        // top: 50%;
-        // left: 10%;
-        transform: translateY(-20px);
-        height: fit-content;
-        padding-left: 40px;
-        min-width: 350px;
-        
-
-
-        &--first{
-            color: white;
-            font-size: 3.13em;
-            font-weight: 100;
-            line-height: 60px;
-        }
-
-        &--second{
-            color: white;
-            font-size: 3.13em;
-            font-weight: 600;
-            line-height: 50px;
-        }
-    }
-
-    &__title{
-        color: #ffdd88;
-        font-size: 5em;
-        font-weight: 600;
-        
-    }
-
-    &__subtitle{
-        color: white;
-        font-size: 2.5em;
-        font-weight: 200;
-        line-height: 50px;
-    }
-
-    &__buttons{
-        display: flex;
-        flex-direction: row;
-        margin: auto;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-        margin-top: 20px;
-
-        &--vote{
-            @include button;
-            background-color: #ffdd88;
-            color: rgb(37, 37, 37);
-            border: none;
-
-            &:hover{
-                cursor: pointer;
-                background-color: #fce3a3;
-            }
-            
- 
-        }
-
-        &--contact{
-            @include button;
-            background: none;
-            border: solid 3px white;
-            color: white;
-
-            &:hover{
-                cursor: pointer;
-                background: rgba(255, 255, 255, 0.448);
-            }
-        }
-    }
-
-
-}
-
-.message1{
-    width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    background-color: $primary-color;
-    & > h1{
-        margin: auto;
-        text-align: center;
-        color: $text-color;
-        font-weight: 800;
-        font-size: 2.81em;
-   
-    }
-}
-.intro{
-    height: fit-content;
-    position: relative;
-    background: none;
-    // height: 500px;
-    overflow: hidden;
-
-    &__img{
-        position: absolute;
-        height: 100%;
-        transform: translateX(-50px);
-        top: 0;
-        left: 0;
-        z-index: -2;
-  
-    }
-
-    &__bg{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(270deg,#ffffff 33.4%,rgba(255,255,255,0.961265) 48.23%,rgba(255,255,255,0.815448) 58.4%,rgba(255,255,255,0.471765) 66.18%,rgba(255,255,255,0) 72.85%);
-        z-index: -1;
-    }
-    
-    &__story{
-
-        width: 50%;
-        padding: 40px 40px 60px 40px;
-        // right: 50px;
-        // z-index: 3;
-        
-        float: right;
-        &--title{
-            font-size: 2.5em;
-            font-weight: 600;
-            color: $text-color;
-           
-        }
-        &--text{
-            color: $text-color;
-            font-size: 1.87em;
-            text-align: left;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 20px;
-        }
-    }
 }
 
 .contact{
@@ -325,138 +159,26 @@ export default {
 
    
 }
-// .bar{
-//     height: 80px;
-//     visibility: hidden;
-// }
-// .banner{
-//     width: 100%;
-//     height: 500px;
-//     overflow: hidden;
-//     position: relative;
-//     & > img{
-//         width: 100%;
-//         transform: translateY(-40px);
-//         filter: brightness(0.75);
-//     }
-//     // background-image: url("../assets/images/banner1.jpeg");
-//     // background-size: cover;
-//     // background-position: center;
+.bannermsg{
+    height: fit-content;
+    color: white;
+    background-color: $primary-color;
+    position: relative;
 
-//     // &__title{
-//     //     position: absolute;
-//     //     font-size: 60px;
-//     //     font-weight: 600;
-//     //     color: pink;
-//     //     top: 50px;
-//     //     right: 100px;
-//     // }
+    & > h1{
+        font-size: $paragraph;
+        padding: 4px;
+    }
+    & > img{
+        width: 60px;
+        position: absolute;
+        top: 50%;
+        right: 40px;
+        transform: translateY(-50%);
 
-//     // &__subtitle{
-
-//     // }
-//     &__text{
-//         position: absolute;
-//         z-index: 2;
-//         top: 50px;
-//         right: 50px;
-//         // background-color: blue;
-//         & > h1{
-//             text-align: left;
-//             font-size: 60px;
-//             font-weight: 600;
-//             color: rgb(251, 209, 216);
-            
-//         }
-//         & > h2{
-//             text-align: left;
-//             font-size: 40px;
-//             font-weight: 600;
-//             color: pink;
-
-//         }
-//     }
-
-// }
-
-@media screen and (max-width: 1000px) {
-    .home{
-        flex-direction: column-reverse;
-        gap: 0px;
-        justify-content: center;
-        align-items: center;
-        height: fit-content;
-        
-        &__text{
-           background: rgb(37,37,37);
-            padding: 20px;
-            transform: translateY(-50px);
-
-        }
-
-        & > img{
-            display: block;
-            width: 300px;
-            align-self: center;
-            margin-top: 10px;
-        }
-
-        &__buttons{
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-        margin-top: 20px;
-
-        &--vote{
-            @include button;
-            background-color: #ffdd88;
-            color: rgb(37, 37, 37);
-            border: none;
-
-            &:hover{
-                cursor: pointer;
-                background-color: #fce3a3;
-            }
-            
- 
-        }
-
-        &--contact{
-            @include button;
-            background: none;
-            border: solid 3px white;
-            color: white;
-            
-            margin: auto;
-
-            &:hover{
-                cursor: pointer;
-                background: rgba(255, 255, 255, 0.448);
-            }
-        }
+        &:hover{
+            cursor: pointer;
         }
     }
-
-    .intro{
-    &__img{
-        transform: translateX(-150px);
-  
-    }
-    }
-}
-
-@media only screen and (max-width: 700px){
-    .message1{
-
-        & > h1{
-
-            font-size: 2em;
-       
-        }
-    }
-    
 }
 </style>

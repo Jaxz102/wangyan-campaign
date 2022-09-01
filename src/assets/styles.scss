@@ -1,44 +1,200 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/*
+RULES OF WEBPAGE CONTENT
+
+Max length of content: 1150px
+
+*/
+@import '@/assets/settings/base.scss';
+
+@mixin button{
+    display: block;
+    width: 200px;
+    height: 50px;
+    font-size: 1.25em;
+    font-weight: 600;
+    outline: none;
+    
 }
 
-html {
-    // height: 100%;
-    // width: 100vw;
 
+.votebanner{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    background-color: $primary-color;
+    & > h1{
+        margin: auto;
+        text-align: center;
+        color: white;
+        font-weight: 800;
+        font-size: 2em;
+        padding: 10px 20px;
+   
+    }
 }
-body {
-    // min-height: 100vh;
-    // width: 100%;
-    // overflow: hidden;
+
+
+
+
+//-----------------------\\
+//-----CONTACT--FORMS-----\\
+//-----------------------\\
+input, button{
+    -webkit-appearance: none;
+}
+.form__input{
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: solid 3px #b2afa7;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-align: left;
+    transition: all .3s;
+    font-family: Arial, Helvetica, sans-serif;
+    background: none;
+    border-radius: 0;
+    &::placeholder{
+        color: rgb(176, 176, 176);
+    }
+
+    &:focus{
+        border-bottom: solid 3px $primary-color;
+    }
+}
+
+.form__label{
+    display: block;
+    color: $primary-color;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+    text-align: left;
+    width: 100%;
+}
+//-----------------------\\
+//--------BUTTONS--------\\
+//-----------------------\\
+.form__button{
+    @include button;
+    width: 200px;
+    border: none;
+    outline: none;
+    margin: 0;  
+    color: white;
+    margin-top: 0px;
+    background-color: $primary-color;
+    border-radius: 0px;
+    box-shadow: 0px 0px 4px 0px rgba(29, 29, 29, 0.596);
+
+    &:hover{
+        cursor: pointer;
+        background-color: $primary-color-hover;
+    }
+}
+
+.action_button{
+    @include button;
+    width: 200px;
+    border: none;
+    outline: none;
+    margin: 0;  
+    color: white;
+    margin-top: 0px;
+    // background-color: $primary-color;
+    font-size: $paragraph;
+    border-radius: 0px;
+    border: solid 4px white;
+    background: $primary-color;
+    // box-shadow: 0px 0px 4px 0px rgba(29, 29, 29, 0.596);
+
+    &:hover{
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.075);
+    }
+}
+.active{
+    background-color: $primary-color;
+    &:hover{
+        cursor: pointer;
+        background-color: $primary-color-hover;
+    }
+}
+
+.unactive{
+    background-color: grey;
+}
+
+.white_button{
+    display: block;
+    min-width: 200px;
+    height: 50px;
+    width: fit-content;
+    padding: 0px 20px;
+    font-size: 1em;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    color: $primary-color;
+    background-color: $background-color;
+    &:hover{
+        cursor: pointer;
+        background-color: rgb(237, 237, 237);
+    }
+}
+//-----------------------\\
+//----------TEXT---------\\
+//-----------------------\\
+.contact__text{
+    font-size: 20px;
+    color: white;
 }
 
 
-
-$primary-color: #ffdd88;
-$primary-color-dark: #ccb16d;
-$text-color: rgb(37, 37, 37);
-
-$heading1: 2.5em;
-$paragraph: 25px;
 
 
 @media only screen and (max-width: 2000px){
     body, html, input, textarea, select {
-        font-size: 16px;
+        font-size: 22px;
     }
 }
 
 @media only screen and (max-width: 1000px){
     body, html, input, textarea, select {
-        font-size: 14px;
+        font-size: 20px;
     }
 }
 @media only screen and (max-width: 700px){
     body, html, input, textarea, select {
-        font-size: 12px;
+        font-size: 18px;
     }
   
+}
+//-----------------------\\
+//----CONTENT PADDING----\\
+//-----------------------\\
+
+.content-padding{
+    padding: 40px calc((100% - 1150px) / 2);
+    
+}
+
+@media only screen and (max-width: 1400px){
+    .content-padding{
+        padding: 30px 100px
+    }
+}
+@media only screen and (max-width: 1000px){
+    .content-padding{
+        padding: 20px 50px;
+        
+    }
+}
+@media only screen and (max-width: 650px){
+    .content-padding{
+        padding: 20px 20px;
+        
+    }
 }
